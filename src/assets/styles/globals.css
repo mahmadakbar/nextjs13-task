@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .header-selection {
+    @apply dark:bg-slate-800 bg-slate-200 font-bold;
+  }
+
+  .custom-shadow {
+    @apply shadow dark:shadow-lg dark:shadow-cyan-500/10;
+  }
+
+  .menu-header {
+    @apply min-w-[100px] py-5 flex justify-center hover:header-selection;
+  }
+}

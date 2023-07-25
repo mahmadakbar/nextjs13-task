@@ -1,4 +1,4 @@
-import fetcher from "@services/fatcher";
+import { fetcherGit } from "@services/fatcher";
 import Image from "next/image";
 import Link from "next/link";
 import useSWR from "swr";
@@ -10,7 +10,7 @@ interface Props {
 export default function ListUser({ search }: Props) {
   const { data, error, isLoading } = useSWR(
     "https://api.github.com/search/users?q=" + search,
-    fetcher
+    fetcherGit
   );
   return (
     <div className="mt-5">

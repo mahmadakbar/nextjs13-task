@@ -1,6 +1,6 @@
 "use client";
 
-import fetcher from "@services/fatcher";
+import { fetcher } from "@services/fatcher";
 import Image from "next/image";
 import Link from "next/link";
 import useSWR from "swr";

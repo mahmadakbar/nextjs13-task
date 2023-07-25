@@ -1,6 +1,5 @@
 import { Container } from "@components";
 import React, { useState } from "react";
-import ListUser from "./listUser";
 import FormsSearch from "./forms";
 
 export const metadata = {
